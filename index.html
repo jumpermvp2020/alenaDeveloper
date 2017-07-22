@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" -->
+<!-- "http://www.w3.org/TR/html4/strict.dtd"> -->
+
+<!-- привет я комментарий и я буду не видне пользователю -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>
+    <input id="mur" placeholder="Одним весенним днем" type="text">
+    <input placeholder="Одним весенним днем" value="Осторожно мурлыка" type="button" onclick="superFunctionForCat()">
+    <button>я тоже кнопка</button>
+    <img src="img/cat.jpg !" alt="">
+</label>
+<b id="boldText">
+    <!--b - bold-->
+    <p id="text">Мурлыка делала мур мур мур, мур мур.</p>
+    Генадий Игнатьевич задался вопросом, чем мурлыка мурмурлычит?
+    <!--p - paragraph-->
+</b>
+
+<i></i>
+<p></p>
+<b></b>
+<div></div>
+<h1>h2,h3,h4,h5,h6</h1>
+<img src="" alt="">
+
+<table>
+    <tr>
+        <!--table row-->
+        <th>
+            <!--table head-->
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <!--table data-->
+        </td>
+    </tr>
+</table>
+<div id="something">
+
+</div>
+</body>
+</html>
+
+
+
+<script>
+    function superFunctionForCat() {
+        var myWay = document.getElementById('mur');
+        document.getElementById('boldText').innerHTML  = 'МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР';
+        myWay.value = 'ЭТО МУР МУР МУР!';
+        var murMurBurya =  document.createElement('div');
+        murMurBurya.innerHTML = '<h2>МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР</h2><h1>МЫ ТУТ ВСЁ ЗАМУРЛЫКАЕМ!!!</h1><h2>МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР</h2>';
+        var something =  document.getElementById('something');
+        document.body.insertBefore(murMurBurya, something);
+
+    }
+</script>
